@@ -1,135 +1,444 @@
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
-}
-/*GENERAL STYLES*/
-html{
-    font-size:62.5%;
-}
-body{
-    font-size:1.6rem;
-    line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
-}
-h1, p, .name, .bio {	
-    font-family: 'Raleway', sans-serif;	
-    text-align: center;	
-    margin: 4%;	
-}	
-h1{
-    font-size:6rem;
-    margin:0;
-}
-a {	
-    text-decoration: none;	
-    color: black;
-    font-size:2.5rem;	
-}	
-a:hover {	
-    font-weight: bold;	
-}	
-.name{	
-    font-size: 150%;	
-    font-weight: 200;	
-}	
-img {	
-    height:39rem;	
-    object-fit: cover;	
-    display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
-}	
-img:hover {	
-    opacity: 80%;	
-}	
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/*HEADER STYLES */
-header{
-    display:flex;
-    justify-content: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-nav{
-    width:30%;
-    display:flex;
-    justify-content:space-evenly;
-    margin-top:5%;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-nav a{
-    color:#626262;
+body {
+	line-height: 1;
 }
-nav span{
-    border-left:3px solid #626262;
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+* {
+    box-sizing: border-box;
 }
-/*Title Section Styles*/
-.title-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
-.title-container div {	
-    background-image: url('https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/7ucwd-M7PCTH8AJC1-Full-Image_GalleryBackground-en-US-1589383925637._RI_.jpg');
-    background-position: center;	
-    color: white;	
-    width:80%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+/*header content */
+
+nav {
+    padding: 0% 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height:60vh;
-    margin:5% 0;
-}	
-.title-container div:hover {	
-    opacity: 80%;	
-}	
-.title-container hr{
-    width:80%;
-}
-button{
-    padding:1% 3%;
-    font-size: 1.6rem;
-    border-radius:6px;
-    border:2px solid #626262;
-    box-shadow: 2px 2px 1px #626262;
-    transition: 2s;
-}
-button:hover{
-    background-color:#626262;
-    border:2px solid white;
-    color:white;
-    box-shadow: 2px 2px 1px white;
-}
-/*Artists Section Styles */
-.artists-container{
-    display:flex;
-    justify-content: space-around;
-    width:80%;
-    margin:0 auto;
+    width: 800px;
+    margin: auto;
+    align-items: baseline;
+    padding-top: 1%;
+    
 }
 
-.artist{
-    width:40%;
-    text-align:center;
+.logo {
+    width: 20%;
+    margin-left: 1%;
 }
-.artist img{
-    width:100%;
+
+.logo img {
+    width: 100%;
+    }
+
+.links {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}    
+
+.anchors{
+    text-decoration: none;
+    color: black;
 }
+
+
+/*top second section */
+
+
+.topbg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}    
+
+.topbg img{
+    width: 97%;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+
+/*middle content */
+
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* this div contains all the boxes but I need to assing individual classes so I can add bg colors to each one, I need 10 */
+
+.middle-content .boxes .box1 {
+    width: 12.5%;
+    height: 100px;
+    background: teal;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+    text-align: start;
+    margin-left: -5px;
+    
+}
+
+    
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* about page css */
+.topbg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 800px;
+}   
+
+.container2{
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.topAbout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 3%;
+    margin-left: 0%;
+}
+
+.aboutDiv {
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
+    width: 98%;
+
+}
+/* Middle section with four boxes*/
+
+.aboutImg {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.FourBoxAbout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 800px;
+
+    
+}
+
+.aboutBox1 {
+    
+    width: 49%;
+    border-bottom: 1px dotted black;
+    padding: 2%;
+    
+}
+
+.aboutBox2 {
+    width: 49%;
+    border-bottom: 1px dotted black;
+    padding: 2%;
+}
+
+
+.aboutBox3 {
+    width: 49%;
+    border-bottom: 1px dotted black;
+    padding: 2%;
+}
+.aboutBox4 {
+    width: 49%;
+    border-bottom: 1px dotted black;
+    padding: 2%;
+}
+
+
+
+/*AboutBottom Section */
+
+.AboutBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 3%;
+    margin-left: 2%;
+    padding-top: 6%;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+
+/* product page */
+
+.Products {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.productvideo {
+    
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5%;
+}
+
+ .buttonLast {
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5%;   
+} 
+
+.JoinButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 5px;
+    color: black
+}
+

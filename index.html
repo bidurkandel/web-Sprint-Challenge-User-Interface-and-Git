@@ -1,43 +1,93 @@
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap'>
+  <meta charset="utf-8">
+
+  <title>Sprint Challenge - Home</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
-    <header>
-     <nav>
-         <a href="#">Home</a>
-         <span></span>
-         <a class="bordered" href="#">About</a>
-         <span></span> 
-         <a href="#">Contact</a>
-     </nav>    
-    </header>
-    <section class="title-container">
-        <div>
-            <h1>Now every body say Mahatma Gandhi<br>Freedom Fighter</h1>
-            <button>Do not Contact Us this button does not work</button>
-        </div>  
-        <hr>
-    </section>
+   <header>
+       <nav>
+           <div class="logo"><img src="img/lambda-black.png" alt="lambda_logo"></div>
+           </div>
+           <div class="links">
+               <a href="index.html" class="anchors">Home</a>
+               <a href="about.html" class="anchors">About</a>
+               <a href="products.html" class="anchors">Products</a>
+               <a href="blog.html" class="anchors">Blog</a>
+               <a href="contact.html" class="anchors">Contact</a>
+           </div>
+       </nav>
+   </header>
+    
+    <div class="container">
+        <section class="topbg">
+            <img src="img/jumbo.jpg" alt="night-ligh-streaks">
+            <!--space for image-->
+        </section>
+        
+        <section class="top-content">
+            <div class="text-container">
+                <h2>The Future</h2>
+                <p>Proin sed quam sed tellus vestibulum ultrices quis in nunc. Phasellus id dui id tortor tincidunt efficitur. Proin faucibus imperdiet erat, non varius lacus. Maecenas non nisl id turpis egestas tincidunt. Nam condimentum venenatis magna eget finibus.</p>
+            </div>
+            <div class="text-container">
+                <h2>The Past</h2>
+                <p>Proin sed quam sed tellus vestibulum ultrices quis in nunc. Phasellus id dui id tortor tincidunt efficitur. Proin faucibus imperdiet erat, non varius lacus. Maecenas non nisl id turpis egestas tincidunt. Nam condimentum venenatis magna eget finibus.</p>
+            </div>
+        </section>
+        
+        <section class="middle-content">
+        
+            <h2>Why Did It Have To Be Boxes...</h2>
+            
+            <div class="boxes">
+                <div class="box1">Box 1</div>
+                <div class="box2">Box 2</div>
+                <div class="box3">Box 3</div>
+                <div class="box4">Box 4</div>
+                <div class="box5">Box 5</div>
+                <div class="box6">Box 6</div>
+                <div class="box7">Box 7</div>
+                <div class="box8">Box 8</div>
+                <div class="box9">Box 9</div>
+                <div class="box10">Box 10</div>
+            </div>
+        
+        </section>
 
-    <section class="artists-container">
-        <div class="artist">
-            <img src="https://daily.jstor.org/wp-content/uploads/2019/04/mahatma_gandhi_master_mediator_1050x700.jpg"/>
-           <a href=https://en.wikipedia.org/wiki/Mahatma_Gandhi> Mahatma Gandhi</a>
-           <div class = "bio">Mohandas Karamchand Gandhi (2 October 1869 – 30 January 1948) also known as Mahatma Gandhi, was an Indian lawyer, anti-colonial nationalist, and political ethicist, who employed nonvalent resistant to lead the successful campaign for India’s independence from British rule, and in turn inspired movements for Civil right and freedom across the world. The honorific Mah honorific Mahātmā (Sanskrit: "great-souled", "venerable"), first applied to him in 1914 in South Africa, is now used throughout the world.</div>
-    </div>
+        <section class="bottom-content">
 
-    <div class="artist">
-        <img src="data:image/jpeg;base64,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"/>
-        <a href="https://www.biography.com/activist/mahatma-gandhi"> Mahatma Gandhi</a>
-        <div class = "bio">Born and raised in a Hindus family in coastal Gujarat, Western India, Gandhi trained in law at the  Inner Temple, London, and was call to the bar at age 22 in June 1891. After two uncertain years in India, during which he was unable to start a successful law practice, he moved to South Africa in 1893 (to represent an Indian merchant in a lawsuit), where he stayed for 21 years. It was in South Africa that Gandhi raised a family and first employed nonviolent resistance in a campaign for civil rights. In 1915, aged 45, he returned to India. He set about organising peasants, farmers, and urban labourers to protest against excessive land-tax and discrimination. Assuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for easing poverty, expanding women's rights, building religious and ethnic amity, ending Untouchability, and above all for achieving Swarāj or self-rule</div>
-      
-    </div>
-    </section>
-    <script src="index.js"></script>
+            <div class="text-container">
+                <h2>That's</h2>
+                <p>Phasellus id dui id tortor tincidunt efficitur. Proin sed quam sed tellus vestibulum ultrices quis in nunc.</p>
+            </div>
+            <div class="text-container">
+                <h2>No</h2>
+                <p>Phasellus id dui id tortor tincidunt efficitur. Proin sed quam sed tellus vestibulum ultrices quis in nunc.</p>
+            </div>
+            <div class="text-container">
+                <h2>Moon</h2>
+                <p>Phasellus id dui id tortor tincidunt efficitur. Proin sed quam sed tellus vestibulum ultrices quis in nunc.</p>
+            </div>
+
+        </section>
+        
+        <footer>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </footer>
+    </div><!-- container -->        
 </body>
 </html>
-
